@@ -1,0 +1,9 @@
+<div class="m-3">
+  <h1>Welcome to <%= @restaurant.name %> page</h1>
+  <div>
+    <p>Number: <%= @restaurant.phone_number.to_s.empty? ? "No filled number" : @restaurant.phone_number %></p>
+    <p>Adress: <%= @restaurant.address %></p>
+    <p>Food type: <%= @restaurant.category %></p>
+  </div>
+  <a href="<%= @restaurant.id %>/reviews/new" class="btn btn-outline-primary">Review this restaurant</a>
+</div>

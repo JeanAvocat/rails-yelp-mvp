@@ -1,0 +1,25 @@
+<div class="m-3">
+  <div class="d-flex align-content-around flex-wrap bd-highlight">
+    <% @restaurants.each do |restaurant| %>
+      <div class="card m-3" style="width: 18rem;">
+        <div class="card-body m-3">
+          <h5 class="card-title"><%= restaurant.name %></h5>
+          <h6 class="card-subtitle mb-2 text-muted"><em><%= restaurant.category %></em></h6>
+          <p class="card-text">Let's discover a new world of food with the guide La Tartine.</p>
+          <a href="restaurants/<%= restaurant.id %>" class="btn btn-outline-primary">view restaurant</a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%# <div class="row m-3"> %>
+  <%# <ul class="list-group col-6"> %>
+    <%# <% @restaurants.each do |restaurant| %>
+      <%# <li class="list-group-item" aria-current="false"> %>
+        <%# <%= restaurant.name %>
+        <%# (<em><%= restaurant.category</em>) %>
+      <%# </li> %>
+    <%# <% end %>
+  <%# </ul> %>
+<%# </div> %>
